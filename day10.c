@@ -27,5 +27,8 @@ int lookSay(char *s, int h){
 }
 
 int main(int argc,char *argv[]){
+	if(argc<3)
+		printf("Usage: call input (number of iterations)");
+	
 	printf("%d\n",lookSay(argv[1],atoi(argv[2])));
 }
